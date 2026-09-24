@@ -26,9 +26,9 @@ const LoginForm = () => {
     },
   });
 
-  const onSubmit = async (data: LoginFormData) => {
+  const onSubmit = async () => {
     await new Promise((resolve) => setTimeout(resolve, 1000));
-    
+
     localStorage.setItem("isAuthenticated", "true");
     navigate("/dashboard");
   };
